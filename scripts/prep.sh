@@ -24,4 +24,9 @@ docker pull rancher/k3d-tools:5.0.0
 docker pull python:3.7-slim
 
 section "Preparing Filesystem..."
-mkdir /tmp/src
+
+if [ -d "/tmp/src" ]; then
+  rm -rf /tmp/src
+fi
+
+mkdir -p /tmp/src

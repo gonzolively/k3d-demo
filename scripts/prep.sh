@@ -53,5 +53,3 @@ if [ -d "/tmp/src" ]; then
   rm -rf /tmp/src
 fi
 mkdir -p /tmp/src
-
-echo "Script completed successfully."
